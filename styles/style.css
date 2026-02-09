@@ -7,7 +7,10 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
-
+.full-container {
+  margin: 0 20px;
+}
+/* announcement bar */
 .announcement-bar {
   background-color: #111111;
   height: 44px;
@@ -21,4 +24,51 @@ body {
   font-size: 12px;
   font-weight: 400;
   line-height: 19.2px;
+}
+
+/* navbar */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 0;
+}
+
+.navbar ul {
+  list-style: none;
+}
+.navbar #nav-menu-list {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20.7px;
+  letter-spacing: 0.72px;
+}
+
+.navbar #nav-btn-list {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20.7px;
+  letter-spacing: 0.72px;
+}
+
+.navbar p {
+  color: #000000;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 25.6px;
+  text-transform: uppercase;
+}
+.navbar p span {
+  color: #000000;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 25.6px;
+  text-transform: uppercase;
 }
