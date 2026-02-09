@@ -230,3 +230,23 @@ body {
   text-transform: capitalize;
   color: #ffffff;
 }
+
+/* collection */
+.collection {
+  display: flex;
+  justify-content: center;
+  gap: 23px;
+  margin-bottom: 120px;
+}
+.collection img {
+  height: 210px;
+  width: 210px;
+  object-fit: cover;
+}
+
+.line {
+  width: 1166px;
+  height: 1px;
+  background-color: #333333;
+  margin: 0 auto 41px;
+}
