@@ -24,6 +24,7 @@ body {
   font-size: 12px;
   font-weight: 400;
   line-height: 19.2px;
+  border: 1px solid #ffffff;
 }
 
 /* navbar */
@@ -32,7 +33,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 35px 0;
+  padding: 28px 0;
 }
 
 .navbar ul {
@@ -71,4 +72,72 @@ body {
   font-weight: 500;
   line-height: 25.6px;
   text-transform: uppercase;
+}
+
+/* hero section */
+
+.slider-wrapper {
+  display: flex; /* place slides in a row */
+  overflow: hidden; /* hide slides that are out of view */
+  width: 100%;
+  position: relative;
+}
+
+.slider-wrapper .slider-item {
+  min-width: 100%; /* each slide takes full width */
+  transition: transform 0.5s ease-in-out; /* smooth sliding */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 138px;
+  height: 500px;
+  position: relative;
+}
+
+.slider-wrapper .slider-item .left-arrow {
+  position: absolute;
+  top: 50%; /* vertically center */
+  left: 20px;
+  transform: translateY(-50%); /* perfect vertical centering */
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.slider-wrapper .slider-item .right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.slider-wrapper .slider-item p {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 47.04px;
+  text-transform: uppercase;
+  width: 533px;
+}
+.slider-wrapper .slider-item button {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  text-transform: capitalize;
+  background-color: #000000;
+  color: #ffffff;
+  width: 152px;
+  height: 50px;
+  margin-top: 50px;
+}
+
+/* slider css for functionality */
+.slider-wrapper .slider-item {
+  display: none;
+}
+.slider-wrapper .slider-item.displaySlide {
+  display: flex;
 }
