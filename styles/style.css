@@ -200,3 +200,33 @@ body {
   top: 50%;
   transform: translateY(-50%);
 }
+/* sign up banner */
+.sign-up {
+  margin-bottom: 85px;
+}
+.sign-up-banner {
+  height: 513px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 60px;
+}
+
+.sign-up-banner h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44.1px;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+.sign-up-banner button {
+  width: 204px;
+  height: 50px;
+  background-color: #000000;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: #ffffff;
+}
