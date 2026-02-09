@@ -22,7 +22,6 @@ leftArrows.forEach((arrow) => {
   });
 });
 
-initializeSlider();
 function initializeSlider() {
   if (slides.length > 0) {
     slides[slideIndex].classList.add("displaySlide");
@@ -30,6 +29,7 @@ function initializeSlider() {
     console.log(intervalId);
   }
 }
+initializeSlider();
 
 function showSlide(index) {
   if (index >= slides.length) {

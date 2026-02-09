@@ -81,6 +81,7 @@ body {
   overflow: hidden; /* hide slides that are out of view */
   width: 100%;
   position: relative;
+  margin-bottom: 38px;
 }
 
 .slider-wrapper .slider-item {
@@ -140,4 +141,62 @@ body {
 }
 .slider-wrapper .slider-item.displaySlide {
   display: flex;
+}
+
+/* summer collection */
+.summer-collection {
+  margin-bottom: 40px;
+}
+
+.summer-collection-header {
+  text-align: center; /* center text inside */
+}
+
+.summer-collection-header h2 {
+  font-size: 32px;
+  line-height: 47.04px;
+  margin-bottom: 44px;
+}
+
+.summer-collection-header button {
+  width: 152px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #000000;
+  color: #ffffff;
+  margin-bottom: 69px;
+  cursor: pointer;
+}
+
+.summer-collection-body {
+  position: relative;
+}
+
+.summer-collection-images {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.summer-collection-images img {
+  width: 315px;
+  height: 315px;
+  object-fit: cover;
+}
+.summer-collection-body .summer-collection-arrows #summer-right-arrow {
+  height: 56px;
+  width: 32px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.summer-collection-body .summer-collection-arrows #summer-left-arrow {
+  height: 56px;
+  width: 32px;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
 }
