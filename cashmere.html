@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce | Cashmere</title>
+
+    <!-- cashmere style -->
+    <link rel="stylesheet" href="/styles/cashmere.css" />
+    <!-- css link -->
+    <link rel="stylesheet" href="/styles/style.css" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="cashmere-container">
+      <!-- navbar -->
+      <div id="navbar"></div>
+
+      <!-- header -->
+      <section id="cashmere-header">
+        <h1>Cashmere</h1>
+        <p>
+          Introduce a little luxury into the everyday with a classic cashmere
+          knit. Ranging from colourful sweaters to day-to-night dresses and
+          relaxed track pants, these pieces are all crafted from pure cashmere
+          or our wool and cashmere blends of the utmost quality and softness.
+        </p>
+      </section>
+
+      <!-- footer -->
+      <div id="footer"></div>
+    </div>
+
+    <script>
+      fetch("navbar.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+        });
+
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>

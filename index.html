@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-commerce</title>
+    <title>E-commerce | home</title>
 
     <!-- css link -->
     <link rel="stylesheet" href="/styles/style.css" />
@@ -24,35 +24,7 @@
 
     <div class="full-container">
       <!-- navbar -->
-      <nav class="navbar">
-        <!--company logo -->
-        <div>
-          <p>Rich<span>Apparel</span></p>
-        </div>
-
-        <!-- menu -->
-
-        <ul id="nav-menu-list">
-          <li>New</li>
-          <li>Shop</li>
-          <li>Cashmere</li>
-          <li>SmileyWorld</li>
-          <li>Care Bears</li>
-          <li>Lifestyle</li>
-        </ul>
-
-        <!-- rightSide button  -->
-
-        <ul id="nav-btn-list">
-          <li id="flag-icon"><img src="/assets/flag.png" alt="" /></li>
-          <li id="search-icon"><img src="/assets/Vector1.png" alt="" /></li>
-          <li id="love-icon"><img src="/assets/Vector2.png" alt="" /></li>
-          <li id="msg-icon"><img src="/assets/Vector3.png" alt="" /></li>
-          <li id="user-icon"><img src="/assets/Vector4.png" alt="" /></li>
-          <li id="store-icon"><img src="/assets/Vector5.png" alt="" /></li>
-          <li id="number-icon">0</li>
-        </ul>
-      </nav>
+      <div id="navbar"></div>
 
       <!-- hero section -->
       <div class="slider-wrapper">
@@ -154,87 +126,23 @@
         <img src="/assets/collection/6.jpg" alt="" />
       </div>
 
-      <div class="line"></div>
-
-      <!-- email subscription -->
-      <div class="email-subscription">
-        <!-- social icons -->
-        <div class="social-icon">
-          <img src="/assets/social/fb.png" alt="" />
-          <img src="/assets/social/x.png" alt="" />
-          <img src="/assets/social/insta.png" alt="" />
-        </div>
-
-        <!-- email input -->
-        <div class="subscription-input">
-          <p>Sign up and get 15% off</p>
-          <div>
-            <input
-              placeholder="Email"
-              type="email"
-              name=""
-              id="subscription-email"
-            />
-            <button id="subscription-btn">Submit</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="line"></div>
-
       <!-- footer -->
-
-      <footer class="footer">
-        <div class="footer-container">
-          <!-- Column 1 -->
-          <div class="footer-col">
-            <h3>Customer Services</h3>
-            <ul>
-              <li>Contact Us</li>
-              <li>Delivery & Returns</li>
-              <li>Terms & Conditions</li>
-              <li>Privacy & Cookie Policy</li>
-              <li>FAQs</li>
-              <li>Klarna</li>
-            </ul>
-          </div>
-
-          <!-- Column 2 -->
-          <div class="footer-col">
-            <h3>Contact Us</h3>
-            <ul>
-              <li id="customer-service-li">Customer Service</li>
-              <li>+44 (0) 207 0164312</li>
-
-              <li>Email Us</li>
-              <li id="wholesale-enquiries-li">Wholesale Enquiries</li>
-
-              <li>+44 (0) 207 0164312</li>
-            </ul>
-          </div>
-
-          <!-- Column 3 -->
-          <div class="footer-col">
-            <h3>Information</h3>
-            <ul>
-              <li>What is Cashmere?</li>
-              <li>About Us</li>
-              <li>Our Supply Chain</li>
-              <li>Brand Values</li>
-              <li>Sweater Fit Guide</li>
-              <li>Stories</li>
-              <li>Cashmere Care Guide</li>
-              <li>Careers</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="copyright">
-          <p>Copyright 2022 © <span>RichApparel</span></p>
-        </div>
-      </footer>
+      <div id="footer"></div>
     </div>
 
+    <script>
+      fetch("navbar.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+        });
+
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
     <script src="/js/slider.js"></script>
   </body>
 </html>

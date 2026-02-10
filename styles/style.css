@@ -24,7 +24,6 @@ body {
   font-size: 12px;
   font-weight: 400;
   line-height: 19.2px;
-  border: 1px solid #ffffff;
 }
 
 /* navbar */
@@ -53,10 +52,37 @@ body {
   display: flex;
   align-items: center;
   gap: 18px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 20.7px;
-  letter-spacing: 0.72px;
+}
+
+#flag-icon img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+#search-icon img {
+  width: 21px;
+  height: 21px;
+  object-fit: contain;
+}
+#love-icon img {
+  width: 21px;
+  height: 18px;
+  object-fit: contain;
+}
+#msg-icon img {
+  width: 23px;
+  height: 16px;
+  object-fit: contain;
+}
+#user-icon img {
+  width: 21px;
+  height: 21px;
+  object-fit: contain;
+}
+#store-icon img {
+  width: 17px;
+  height: 20px;
+  object-fit: contain;
 }
 
 .navbar p {
@@ -265,6 +291,7 @@ body {
 .social-icon img {
   width: 18px;
   height: 18px;
+  margin-right: 12px;
 }
 
 .subscription-input p {
