@@ -142,3 +142,54 @@ body {
   letter-spacing: 0%;
   color: #111111;
 }
+
+.cashmere-line {
+  margin-top: 75px;
+  margin-bottom: 22px;
+  height: 1px;
+  background-color: #333333;
+  margin: 0 auto 41px;
+}
+
+/* pagination */
+.pagination {
+  display: flex;
+  align-items: center; /* ensures vertical alignment of everything */
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.pagination .arrow {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.pagination .arrow img {
+  width: 13px;
+  height: 13px;
+}
+
+.pagination .page-numbers {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 26px;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination .page {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1;
+  color: #777777;
+}
+
+.pagination .page.active {
+  color: #000000;
+}
