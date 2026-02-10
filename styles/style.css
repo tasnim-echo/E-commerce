@@ -250,3 +250,121 @@ body {
   background-color: #333333;
   margin: 0 auto 41px;
 }
+
+/* email subscription */
+.email-subscription {
+  width: 1166px;
+  height: 160px;
+  padding-left: 78px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.social-icon img {
+  width: 18px;
+  height: 18px;
+}
+
+.subscription-input p {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25.6px;
+  letter-spacing: 0%;
+  margin-bottom: 17px;
+}
+.subscription-input #subscription-email {
+  width: 279px;
+  height: 30px;
+  margin-bottom: 17px;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  outline: none;
+}
+.subscription-input #subscription-btn {
+  width: 97px;
+  height: 30px;
+  background-color: #111111;
+  font-size: 10px;
+  line-height: 12.1px;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* footer */
+.footer {
+  margin-top: 81px;
+  width: 1166px;
+  padding-left: 126px;
+  padding-right: 126px;
+  margin: auto;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 250px;
+}
+
+.footer-col h3 {
+  font-size: 9px;
+  line-height: 24.2px;
+  letter-spacing: 1.65px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #111111;
+  text-align: center;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 85px;
+}
+
+.footer-col ul li {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 27.02px;
+  letter-spacing: 0%;
+  color: #777777;
+  cursor: pointer;
+}
+.footer-col ul #customer-service-li {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 22.4px;
+}
+.footer-col ul #wholesale-enquiries-li {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 22.4px;
+}
+
+/* copy right */
+.copyright {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 17.6px;
+  letter-spacing: 1.65px;
+  color: #777777;
+  text-align: center;
+  padding: 15px 10px;
+  font-family: Helvetica, Arial, sans-serif;
+  margin-bottom: 60px;
+}
+
+.copyright span {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 17.6px;
+  letter-spacing: 1.65px;
+  color: #333333;
+  text-align: center;
+  padding: 15px 6px;
+}
