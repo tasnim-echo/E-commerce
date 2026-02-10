@@ -46,6 +46,7 @@ body {
   font-size: 18px;
   line-height: 20.7px;
   letter-spacing: 0.72px;
+  cursor: pointer;
 }
 
 .navbar #nav-btn-list {

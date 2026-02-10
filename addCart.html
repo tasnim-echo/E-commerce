@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce | Cart</title>
+
+    <!-- cashmere style -->
+    <link rel="stylesheet" href="/styles/addCart.css" />
+    <!-- css link -->
+    <link rel="stylesheet" href="/styles/style.css" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- announcement section -->
+    <div class="announcement-bar">
+      <p>Sign up to our newsletter to receive 15% off your first order.</p>
+    </div>
+    <div id="cart-container">
+      <!-- navbar -->
+      <div id="navbar"></div>
+
+      <!-- main content -->
+      <main id="cart-content">
+        <!-- selected product or upper content -->
+        <section id="selected-product">
+          <!-- left side 3 images -->
+          <div id="selected-product-left-side">
+            <img src="/assets/addCart/3.jpg" alt="" />
+            <img src="/assets/addCart/5.jpg" alt="" />
+            <img src="/assets/addCart/2.jpg" alt="" />
+          </div>
+
+          <!-- right side content or product selected details -->
+          <div id="selected-product-right-side">
+            <div class="cart-line"></div>
+            <div id="selected-product-right-side-breadcrumb">
+              <span id="selected-product-right-side-breadcrumb-home">Home</span>
+              /
+              <span id="selected-product-right-side-breadcrumb-cashmere"
+                >Cashmere</span
+              >
+            </div>
+
+            <div id="selected-product-info">
+              <h2>SmileyWorld® Cool White Smiley Wool-Cashmere T-Shirt</h2>
+              <p>£275</p>
+
+              <div class="material-info">
+                Play it cool in this oversized knitted T-shirt. Made from wool
+                with a touch of cashmere for added softness, it has a
+                luxuriously lightweight handle. The yellow intarsia incorporates
+                two smiley faces within the bold block lettering.
+              </div>
+
+              <div class="fit-check-info">
+                <span>Oversized Fit</span>
+                <br />
+                <span>Model is 5ft 10in and wears a UK size 8/Small.</span>
+              </div>
+
+              <div class="select-size">
+                <div class="uk-size">
+                  <p class="uk">All sizes are UK sizes</p>
+                  <p class="size-guide">Size Guide</p>
+                </div>
+                <select id="size-select">
+                  <option value="">Select Size</option>
+                  <option value="s">S</option>
+                  <option value="m">M</option>
+                  <option value="l">L</option>
+                  <option value="xl">XL</option>
+                </select>
+                <button class="add-to-bag">Add to Bag</button>
+              </div>
+
+              <!-- accordion -->
+              <div class="accordion">
+                <p class="wishlist">
+                  <span><i class="fa-regular fa-heart"></i> </span>Add to
+                  Wishlist
+                </p>
+
+                <div class="accordion-content">
+                  <div class="question">DETAILS</div>
+                  <div class="answer">
+                    Play it cool in this oversized knitted T-shirt
+                  </div>
+                </div>
+
+                <div class="accordion-content">
+                  <div class="question">SEND AS A GIFT</div>
+                  <div class="answer">
+                    You can send this product as a gift with personalized
+                    wrapping options.
+                  </div>
+                </div>
+
+                <div class="accordion-content">
+                  <div class="question">MEASUREMENTS</div>
+                  <div class="answer">
+                    Available sizes: S, M, L, XL. Model wears UK size 8/Small.
+                  </div>
+                </div>
+
+                <div class="accordion-content">
+                  <div class="question">CARE</div>
+                  <div class="answer">
+                    Hand wash cold, dry flat, do not bleach, iron low if
+                    necessary.
+                  </div>
+                </div>
+
+                <div class="accordion-content">
+                  <div class="question">Delivery & Returns</div>
+                  <div class="answer">
+                    Free standard delivery. Returns accepted within 30 days in
+                    original condition
+                  </div>
+                </div>
+
+                <div class="accordion-content">
+                  <div class="question">SUSTAINABILITY</div>
+                  <div class="answer">
+                    Made with responsibly sourced wool and eco-friendly
+                    processes.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- recently viewed -->
+        <section id="recently-viewed">
+          <h2>Recently Viewed</h2>
+
+          <div class="recently-viewed-product">
+            <div>
+              <img src="/assets/addCart/4.jpg" alt="" />
+              <div style="display: flex; justify-content: space-between">
+                <p>SmileyWorld® Khaki Many-A-Smile Cotton Sweatshirt</p>
+                <span>Tk‌15,000</span>
+              </div>
+            </div>
+
+            <div>
+              <img src="/assets/addCart/1.jpg" alt="" />
+              <div style="display: flex; justify-content: space-between">
+                <p>Campanula Blue Cashmere Slouchy Sweater</p>
+                <span>Tk‌30,000</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- footer -->
+      <div id="footer"></div>
+    </div>
+
+    <script>
+      fetch("navbar.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+        });
+
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+    <script src="/js/accordion.js"></script>
+    <script src="/js/menu.js"></script>
+  </body>
+</html>
