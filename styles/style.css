@@ -9,9 +9,9 @@ body {
   max-width: 1440px;
   margin: 0 auto;
 }
-/* .full-container {
+.full-container {
   margin: 0 20px;
-} */
+}
 /* announcement bar */
 .announcement-bar {
   background-color: #111111;
@@ -275,7 +275,7 @@ body {
 
 .line {
   width: 1166px;
-  height: 2px;
+  height: 1px;
   background-color: #9d9797;
   margin: 0 auto 41px;
 }
@@ -294,7 +294,7 @@ body {
 .social-icon img {
   width: 18px;
   height: 18px;
-  margin-right: 12px;
+  margin-right: 23px;
 }
 
 .subscription-input p {
@@ -329,7 +329,7 @@ body {
   margin-top: 81px;
   width: 1166px;
   padding-left: 126px;
-  padding-right: 126px;
+  padding-right: 146px;
   margin: auto;
 }
 
@@ -354,7 +354,7 @@ body {
   list-style: none;
   padding: 0;
   text-align: center;
-  margin-bottom: 85px;
+  margin-bottom: 79px;
 }
 
 .footer-col ul li {
@@ -386,7 +386,7 @@ body {
   text-align: center;
   padding: 15px 10px;
   font-family: Helvetica, Arial, sans-serif;
-  margin-bottom: 60px;
+  margin-bottom: 59px;
 }
 
 .copyright span {
