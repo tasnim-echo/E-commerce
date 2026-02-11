@@ -6,10 +6,12 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
 }
-.full-container {
+/* .full-container {
   margin: 0 20px;
-}
+} */
 /* announcement bar */
 .announcement-bar {
   background-color: #111111;
