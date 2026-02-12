@@ -108,6 +108,35 @@ body {
 
 .product-card {
   margin-bottom: 40px;
+  position: relative;
+}
+
+/* summer-essentials Button */
+.summer-essentials {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 171px;
+  height: 26px;
+  padding: 6px 19px 6px 19px;
+
+  background-color: #ffffff;
+  border: none;
+
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12.65px;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+
+/* Heart Icon */
+.heart {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+
+  cursor: pointer;
 }
 
 .product-card img {
@@ -127,6 +156,7 @@ body {
   line-height: 21px;
   letter-spacing: 0%;
   color: #000000;
+  margin-bottom: 8px;
 }
 .product-card .product-info p {
   font-weight: 400;
@@ -147,6 +177,7 @@ body {
   margin-top: 75px;
   margin-bottom: 22px;
   height: 1px;
+
   background-color: #333333;
   margin: 0 auto 41px;
 }

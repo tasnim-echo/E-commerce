@@ -23,4 +23,13 @@ fetch("/navbar.html")
         window.location.href = "/addCart.html";
       });
     }
+
+    const hamburger = document.getElementById("hamburger");
+    const menu = document.getElementById("nav-menu-list");
+    const btn = document.getElementById("nav-btn-list");
+
+    hamburger.addEventListener("click", () => {
+      menu.classList.toggle("active");
+      btn.classList.toggle("active");
+    });
   });

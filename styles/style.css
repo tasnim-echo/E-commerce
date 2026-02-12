@@ -51,7 +51,7 @@ body {
   cursor: pointer;
 }
 
-.navbar #nav-btn-list {
+#nav-btn-list {
   display: flex;
   align-items: center;
   gap: 18px;
@@ -106,16 +106,16 @@ body {
 /* hero section */
 
 .slider-wrapper {
-  display: flex; /* place slides in a row */
-  overflow: hidden; /* hide slides that are out of view */
+  display: flex;
+  overflow: hidden;
   width: 100%;
   position: relative;
   margin-bottom: 38px;
 }
 
 .slider-wrapper .slider-item {
-  min-width: 100%; /* each slide takes full width */
-  transition: transform 0.5s ease-in-out; /* smooth sliding */
+  min-width: 100%;
+  transition: transform 0.5s ease-in-out;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -126,9 +126,9 @@ body {
 
 .slider-wrapper .slider-item .left-arrow {
   position: absolute;
-  top: 50%; /* vertically center */
+  top: 50%;
   left: 20px;
-  transform: translateY(-50%); /* perfect vertical centering */
+  transform: translateY(-50%);
   height: 40px;
   width: 40px;
   cursor: pointer;
@@ -178,7 +178,7 @@ body {
 }
 
 .summer-collection-header {
-  text-align: center; /* center text inside */
+  text-align: center;
 }
 
 .summer-collection-header h2 {
@@ -217,7 +217,7 @@ body {
   height: 56px;
   width: 32px;
   position: absolute;
-  right: 20px;
+  right: 10px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -225,7 +225,7 @@ body {
   height: 56px;
   width: 32px;
   position: absolute;
-  left: 20px;
+  left: 10px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -397,4 +397,50 @@ body {
   color: #333333;
   text-align: center;
   padding: 15px 6px;
+}
+
+/* mobile view */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .hamburger {
+    display: block;
+  }
+  .navbar #nav-menu-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  #nav-menu-list.active {
+    display: flex;
+  }
+
+  .navbar #nav-btn-list {
+    display: none;
+
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  /* Show buttons when active */
+  .navbar #nav-btn-list.active {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
 }
